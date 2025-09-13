@@ -1,0 +1,31 @@
+<<<<<<< HEAD
+[theme]
+# Colore di sfondo primario (per pulsanti, slider, elementi interattivi)
+primaryColor="#5B2C6F"        # Viola scuro (come esempio, puoi cambiarlo)
+# Colore di sfondo generale della pagina
+backgroundColor="#F8F9FA"     # Grigio molto chiaro
+# Colore di sfondo dei contenitori secondari (es. sidebar, expander)
+secondaryBackgroundColor="#FFFFFF" # Bianco
+# Colore del testo principale
+textColor="#212529"           # Testo quasi nero
+# Tipo di font (puoi usare "sans serif", "serif", "monospace")
+font="sans serif"
+
+# [global] (Opzionale: per impostazioni globali se necessario)
+# showSidebarNavigation = false # Puoi rimuoverlo se non hai più pagine
+=======
+[theme]
+# Colore di sfondo primario (per pulsanti, slider, elementi interattivi)
+primaryColor="#5B2C6F"        # Viola scuro (come esempio, puoi cambiarlo)
+# Colore di sfondo generale della pagina
+backgroundColor="#F8F9FA"     # Grigio molto chiaro
+# Colore di sfondo dei contenitori secondari (es. sidebar, expander)
+secondaryBackgroundColor="#FFFFFF" # Bianco
+# Colore del testo principale
+textColor="#212529"           # Testo quasi nero
+# Tipo di font (puoi usare "sans serif", "serif", "monospace")
+font="sans serif"
+
+# [global] (Opzionale: per impostazioni globali se necessario)
+# showSidebarNavigation = false # Puoi rimuoverlo se non hai più pagine
+>>>>>>> 99863ca1610e59b9e0f0c9a0bf4c7e400c6145ec

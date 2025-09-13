@@ -1,0 +1,245 @@
+<<<<<<< HEAD
+/* Stile generale del corpo della pagina Streamlit */
+html, body, [data-testid="stAppViewContainer"] {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Header principale */
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Sottotitoli */
+h2, h3, h4 {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+/* Messaggi di successo/info */
+[data-testid="stSuccess"], [data-testid="stInfo"] {
+    background-color: #d4edda; /* Verde chiaro */
+    color: #155724; /* Verde scuro */
+    border-left: 5px solid #155724;
+    padding: 10px;
+    margin-bottom: 1em;
+    border-radius: 5px; /* Bordi arrotondati */
+}
+[data-testid="stInfo"] {
+    background-color: #e0f7fa; /* Azzurro chiaro */
+    color: #007bff; /* Blu */
+    border-left: 5px solid #007bff;
+}
+
+
+/* Stile per i bottoni generali */
+.stButton>button {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.stButton>button:hover {
+    background-color: #6A1B9A; /* Tonalità più scura al passaggio del mouse */
+    color: white;
+}
+
+/* Stile per i link nella tabella */
+a {
+    color: var(--primary-color); /* Usa il primaryColor del tema */
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Stile per la sidebar */
+.st-emotion-cache-1na61c0 { /* Selettore per la sidebar */
+    background-color: var(--secondary-background-color);
+    padding: 15px;
+    border-right: 1px solid #e0e0e0;
+    border-radius: 0 10px 10px 0; /* Bordi arrotondati a destra */
+}
+
+/* Intestazioni della tabella simulata */
+/* ✅ NUOVO SELETTORE: Targetta il div che contiene il testo dell'intestazione e applica lo stile */
+/* Questo selettore cerca i div che sono figli diretti di un "stHorizontalBlock" (riga) */
+/* e che contengono un elemento "strong" (il nostro testo dell'intestazione) */
+div[data-testid="stHorizontalBlock"] > div > div > div > div > .stMarkdown > [data-testid="stMarkdownContainer"] p strong {
+    font-weight: bold;
+    background-color: #DDEEE6; /* Verde chiaro */
+    padding: 8px 10px;
+    color: var(--primary-color);
+    text-align: left; /* Allineamento testo a sinistra */
+    display: block; /* Importante per far funzionare padding e background sul strong */
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    border-radius: 5px; /* Bordi leggermente arrotondati */
+}
+
+/* Applica il bordo inferiore all'intera riga di intestazione, non alle singole celle */
+/* Questo è il div che contiene tutte le intestazioni */
+/* Potrebbe essere necessario regolare il selettore se ci sono altri stHorizontalBlock */
+div[data-testid="stHorizontalBlock"]:nth-child(2) { /* Targetta il secondo stHorizontalBlock */
+    border-bottom: 2px solid var(--primary-color); /* Bordo sotto l'intera riga di intestazione */
+    margin-bottom: 10px; /* Spazio sotto le intestazioni */
+}
+
+
+/* Righe della tabella simulata - Contenitori delle colonne */
+.st-emotion-cache-1r6c0d0 { /* Selettore per le righe di st.columns */
+    border-bottom: 1px solid #dee2e6;
+    padding: 0px; /* Rimuovi padding dal contenitore esterno */
+}
+
+/* Stile per le singole celle (colonne dentro la riga) */
+.st-emotion-cache-1r6c0d0 > div > div { /* Selettore per le singole celle */
+    padding: 5px 10px; /* Padding interno per le celle */
+    display: flex; /* Flexbox per allineamento verticale */
+    align-items: center; /* Centra verticalmente il contenuto */
+    min-height: 40px; /* Altezza minima per le celle */
+}
+
+
+/* Per i grafici (opzionale, se vuoi personalizzare) */
+.stPlotlyChart {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--secondary-background-color);
+}
+=======
+/* Stile generale del corpo della pagina Streamlit */
+html, body, [data-testid="stAppViewContainer"] {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Header principale */
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Sottotitoli */
+h2, h3, h4 {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+/* Messaggi di successo/info */
+[data-testid="stSuccess"], [data-testid="stInfo"] {
+    background-color: #d4edda; /* Verde chiaro */
+    color: #155724; /* Verde scuro */
+    border-left: 5px solid #155724;
+    padding: 10px;
+    margin-bottom: 1em;
+    border-radius: 5px; /* Bordi arrotondati */
+}
+[data-testid="stInfo"] {
+    background-color: #e0f7fa; /* Azzurro chiaro */
+    color: #007bff; /* Blu */
+    border-left: 5px solid #007bff;
+}
+
+
+/* Stile per i bottoni generali */
+.stButton>button {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.stButton>button:hover {
+    background-color: #6A1B9A; /* Tonalità più scura al passaggio del mouse */
+    color: white;
+}
+
+/* Stile per i link nella tabella */
+a {
+    color: var(--primary-color); /* Usa il primaryColor del tema */
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Stile per la sidebar */
+.st-emotion-cache-1na61c0 { /* Selettore per la sidebar */
+    background-color: var(--secondary-background-color);
+    padding: 15px;
+    border-right: 1px solid #e0e0e0;
+    border-radius: 0 10px 10px 0; /* Bordi arrotondati a destra */
+}
+
+/* Intestazioni della tabella simulata */
+/* ✅ NUOVO SELETTORE: Targetta il div che contiene il testo dell'intestazione e applica lo stile */
+/* Questo selettore cerca i div che sono figli diretti di un "stHorizontalBlock" (riga) */
+/* e che contengono un elemento "strong" (il nostro testo dell'intestazione) */
+div[data-testid="stHorizontalBlock"] > div > div > div > div > .stMarkdown > [data-testid="stMarkdownContainer"] p strong {
+    font-weight: bold;
+    background-color: #DDEEE6; /* Verde chiaro */
+    padding: 8px 10px;
+    color: var(--primary-color);
+    text-align: left; /* Allineamento testo a sinistra */
+    display: block; /* Importante per far funzionare padding e background sul strong */
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    border-radius: 5px; /* Bordi leggermente arrotondati */
+}
+
+/* Applica il bordo inferiore all'intera riga di intestazione, non alle singole celle */
+/* Questo è il div che contiene tutte le intestazioni */
+/* Potrebbe essere necessario regolare il selettore se ci sono altri stHorizontalBlock */
+div[data-testid="stHorizontalBlock"]:nth-child(2) { /* Targetta il secondo stHorizontalBlock */
+    border-bottom: 2px solid var(--primary-color); /* Bordo sotto l'intera riga di intestazione */
+    margin-bottom: 10px; /* Spazio sotto le intestazioni */
+}
+
+
+/* Righe della tabella simulata - Contenitori delle colonne */
+.st-emotion-cache-1r6c0d0 { /* Selettore per le righe di st.columns */
+    border-bottom: 1px solid #dee2e6;
+    padding: 0px; /* Rimuovi padding dal contenitore esterno */
+}
+
+/* Stile per le singole celle (colonne dentro la riga) */
+.st-emotion-cache-1r6c0d0 > div > div { /* Selettore per le singole celle */
+    padding: 5px 10px; /* Padding interno per le celle */
+    display: flex; /* Flexbox per allineamento verticale */
+    align-items: center; /* Centra verticalmente il contenuto */
+    min-height: 40px; /* Altezza minima per le celle */
+}
+
+
+/* Per i grafici (opzionale, se vuoi personalizzare) */
+.stPlotlyChart {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--secondary-background-color);
+}
+>>>>>>> 99863ca1610e59b9e0f0c9a0bf4c7e400c6145ec

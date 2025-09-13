@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+.env
+.venv
+venv/  # <--- Questo ignora la tua cartella venv!
+env/
+*.egg-info/
+*.ipynb_checkpoints/
+
+# IDEs and other tools
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Streamlit specific
+.streamlit/local_configs.toml # Per ignorare configurazioni locali se presenti
+
+# Output files from scraper
+output/  # <--- Ignora l'intera cartella output/ localmente, se non vuoi caricarla su GitHub
+# Se invece vuoi caricare output/eventi_unificati_filtrati.csv, allora metti:
+# output/*.xlsx
+# output/*.csv
+# !output/eventi_unificati_filtrati.csv # <--- Eccezione per il file specifico se vuoi caricarlo
+
+# Chromedriver (non necessario su Git se usi webdriver-manager)
+chromedriver.exe
